@@ -7,48 +7,37 @@
     <title>Chloe Cramer | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-60GF4CLRR5"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-60GF4CLRR5");
-    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Hi, I'm Chloe Cramer!</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+    <div class="layout">
+      <aside class="sidebar" data-aos="fade-right">
+        <img src="headshot.jpg" alt="Chloe Cramer" class="profile-pic" />
+        <h1>CHLOE CRAMER</h1>
+        <nav class="sidebar-nav">
+          <a href="about.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </aside>
 
-    <main>
-      <section class="hero">
-        <h2>Welcome to my Portfolio 🌸</h2>
-        <p>
-          I’m a Business Analytics & Information Systems student exploring
-          digital product management.
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Chloe Cramer</p>
-    </footer>
+      <main class="main-content">
+        <section class="intro" data-aos="fade-up">
+          <p>
+            Welcome! I am a Business Analytics & Information Systems student
+            graduating in May of 2025. I am a highly motivated being looking for
+            an internship or full-time position that will allow me to showcase
+            my analytical skills.
+          </p>
+        </section>
+      </main>
+    </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
