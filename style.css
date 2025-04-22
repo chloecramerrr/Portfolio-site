@@ -6,11 +6,13 @@ body {
   color: #222;
   overflow-x: hidden;
   display: flex;
-  height: 100vh;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .layout {
   display: flex;
+  flex: 1;
   width: 100%;
 }
 
@@ -70,6 +72,32 @@ body {
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background: #d14781;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.social-icons a {
+  color: #d14781;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 768px) {
