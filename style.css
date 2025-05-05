@@ -115,3 +115,19 @@ body {
     padding: 2rem;
   }
 }
+.footer-bar {
+  background-color: #c63c7c; /* Dark pink like your sidebar */
+  color: white;
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-bar a {
+  color: white;
+  text-decoration: underline;
+  margin: 0 0.5em;
+}
